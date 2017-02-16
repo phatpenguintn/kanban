@@ -1,10 +1,11 @@
 <div class="col-sm-3">
     <div class="card">
         <div class="card-block">
-            <p>Task Title</p>
+            <p>{{ task.id }} - {{ task.title }}</p>
+            <p>{{ task.description }}
         </div>
         <div class="card-footer">
-            Not Complete
+            <div class="predecessors">{{ task.predecessors }}</div><i class="fa fa-times-circle" aria-hidden="true"></i>{{task.status}}
         </div>
     </div>
 </div>
