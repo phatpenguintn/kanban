@@ -1,6 +1,6 @@
 {
-    "name": "angular2-skeleton",
-    "description": "PhatPenguin Angular 2 skeleton project",
+    "name": "kanban",
+    "description": "Simple Kanban task board",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "lite": "lite-server",
