@@ -8,12 +8,9 @@ import {Task} from './model/task';
     templateUrl: 'app.component.html'
 })
 export class AppComponent { 
-    task1: Task = {
-        id: 1,
-        title: 'Do Some stuff',
-        description: "It's really cool stuff",
-        status: "Not Started",
-        predecessors: [ 0 ]
-
-    }
+    private taskArray = [
+        new Task(0,"Do Some stuff","description","in Progress"),
+        new Task(1,"Buy a monkey","description","in Progress")
+    ]
+ 
 }

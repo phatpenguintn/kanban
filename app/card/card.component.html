@@ -2,10 +2,10 @@
     <div class="card">
         <div class="card-block">
             <p>{{ task.id }} - {{ task.title }}</p>
-            <p>{{ task.description }}
+            {{ task.description }}
         </div>
         <div class="card-footer">
-            <div class="predecessors">{{ task.predecessors }}</div><i class="fa fa-times-circle" aria-hidden="true"></i>{{task.status}}
+            <i class="fa fa-times-circle" aria-hidden="true"></i>{{task.status}}
         </div>
     </div>
 </div>
