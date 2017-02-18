@@ -16,3 +16,9 @@ i {
 .predecessors {
     text-align: left;
 }
+.complete {
+    background-color: #aaaaaa
+}
+.inprogress {
+    background-color: #ffaaff
+}

@@ -1,6 +1,6 @@
-<div class="col-sm-3">
-    <div class="card">
+<div class="col-sm-3" >
+    <div class="card"  [class.inprogress]="task.status == 'In Progress'" [class.complete]="task.status =='Complete'">
         <div class="card-block"><p>{{ task.id }} - {{ task.title }}</p>{{ task.description }}</div>
-        <div class="card-footer"><i class="fa fa-times-circle" aria-hidden="true"></i>{{task.status}}</div>
+        <div class="card-footer" (click)="toggleStatus()" [class.inprogress]="task.status == 'In Progress'" [class.complete]="task.status =='Complete'"><i class="fa fa-times-circle" aria-hidden="true"></i>{{task.status}}</div>
     </div>
 </div>
